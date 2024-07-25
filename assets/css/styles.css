@@ -1,3 +1,5 @@
+/* Add these styles to your existing CSS file */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -40,6 +42,34 @@ section {
     padding: 2rem;
     max-width: 800px;
     margin: auto;
+}
+
+#biography, #featured-projects, #photography-highlights, #contact {
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#biography h2, #featured-projects h2, #photography-highlights h2, #contact h2 {
+    color: #007acc;
+    text-align: center;
+}
+
+.project, .photo {
+    margin-bottom: 1.5rem;
+}
+
+.project h3, .photo p {
+    margin: 0.5rem 0;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 footer {
