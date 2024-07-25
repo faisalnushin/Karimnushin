@@ -52,6 +52,23 @@ section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.bio-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.bio-image {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bio-text {
+    flex: 1;
+}
+
 #biography h2, #featured-projects h2, #photography-highlights h2, #contact h2 {
     color: #007acc;
     text-align: center;
