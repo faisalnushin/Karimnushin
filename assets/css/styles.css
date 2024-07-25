@@ -4,6 +4,9 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -40,6 +43,7 @@ section {
     padding: 2rem;
     max-width: 800px;
     margin: auto;
+    flex: 1;
 }
 
 #biography, #featured-projects, #photography-highlights, #contact {
@@ -52,19 +56,21 @@ section {
 
 .bio-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .bio-image {
-    max-width: 100%;
-    height: auto;
+    max-width: 200px;
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
 }
 
 .bio-text {
+    flex: 1;
     text-align: justify;
 }
 
@@ -93,7 +99,5 @@ footer {
     padding: 1rem;
     background: #333;
     color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto;
 }
