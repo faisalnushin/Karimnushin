@@ -49,7 +49,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Align items at the top */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 section {
@@ -108,4 +110,12 @@ section {
 }
 
 footer {
-    
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
