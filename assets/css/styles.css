@@ -11,11 +11,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #121212; /* Dark background color to match the new image */
+    background-color: #2b2b2b; /* Dark background color to match the new image */
 }
 
 header {
-    background: url('https://static.vecteezy.com/system/resources/thumbnails/039/917/083/original/abstract-scene-of-futuristic-cyber-world-sci-fi-grid-technology-glowing-surface-neon-night-scene-digital-science-background-4k-animation-seamless-loop-virtual-reality-concept-video.jpg') no-repeat center center;
+    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     padding: 2rem;
@@ -53,7 +53,7 @@ main {
     justify-content: flex-start;
     width: 100%;
     box-sizing: border-box;
-    background-color: #121212; /* Dark background color to match the new image */
+    background-color: #2b2b2b; /* Dark background color to match the new image */
 }
 
 section {
@@ -113,7 +113,7 @@ section {
 footer {
     text-align: center;
     padding: 1rem;
-    background: url('https://static.vecteezy.com/system/resources/thumbnails/039/917/083/original/abstract-scene-of-futuristic-cyber-world-sci-fi-grid-technology-glowing-surface-neon-night-scene-digital-science-background-4k-animation-seamless-loop-virtual-reality-concept-video.jpg') no-repeat center center;
+    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     width: 100%;
