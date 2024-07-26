@@ -76,15 +76,6 @@ section {
     align-items: flex-start;
 }
 
-.bio-image {
-    max-width: 200px;
-    width: 100%;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
 .bio-text {
     flex: 1;
     text-align: justify;
@@ -95,19 +86,18 @@ section {
     text-align: center;
 }
 
-.project, .photo {
-    margin-bottom: 1.5rem;
-}
-
-.project h3, .photo p {
-    margin: 0.5rem 0;
-}
-
 .photo img {
-    max-width: 100%;
-    height: auto;
+    max-width: 400px;
+    max-height: 533px;
+    display: block;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.photo {
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 footer {
