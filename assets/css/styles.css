@@ -24,6 +24,7 @@ body {
 main {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 /* Header Styling */
@@ -63,236 +64,65 @@ nav ul li a:hover {
 }
 
 /* Main Content Styling */
-main.home-background {
+main.about-content {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('assets/images/professional-picture.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: calc(100vh - 150px); /* Adjusted height to ensure footer is visible */
-}
-
-section#welcome {
-    max-width: 1200px;
-    text-align: center;
-}
-
-section#welcome img.main-image {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    box-sizing: border-box;
-    height: 50px; /* Ensure footer height is consistent */
-    flex-shrink: 0;
-}
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #2b2b2b; /* Dark background color */
-    color: white;
-}
-
-body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-/* Restricting size */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header Styling */
-header {
-    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-    width: 100%;
-}
-
-/* Navigation Styling */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s ease;
-}
-
-nav ul li a:hover {
-    background: #007acc;
-    border-radius: 5px;
-}
-
-/* Main Content Styling */
-main.home-background {
-    flex: 1;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background: url('assets/images/professional-picture.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: calc(100vh - 150px); /* Adjusted height to ensure footer is visible */
+    padding: 2rem;
+    background-color: #2b2b2b;
 }
 
-section#welcome {
-    max-width: 1200px;
+section {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
-section#welcome img.main-image {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
+.bio-container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.bio-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo {
+    margin: 1rem;
+    text-align: center;
+}
+
+.photo img {
+    max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    box-sizing: border-box;
-    height: 50px; /* Ensure footer height is consistent */
-    flex-shrink: 0;
-}
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #2b2b2b; /* Dark background color */
-    color: white;
-}
-
-body {
+.project-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
 }
 
-/* Restricting size */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header Styling */
-header {
-    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-    width: 100%;
-}
-
-/* Navigation Styling */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+.project {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s ease;
-}
-
-nav ul li a:hover {
-    background: #007acc;
-    border-radius: 5px;
-}
-
-/* Main Content Styling */
-main.home-background {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('assets/images/professional-picture.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: calc(100vh - 150px); /* Adjusted height to ensure footer is visible */
-}
-
-section#welcome {
-    max-width: 1200px;
-    text-align: center;
-}
-
-section#welcome img.main-image {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
+    padding: 2rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer Styling */
@@ -303,111 +133,7 @@ footer {
     background-size: cover;
     color: white;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    box-sizing: border-box;
-    height: 50px; /* Ensure footer height is consistent */
-    flex-shrink: 0;
-}
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #2b2b2b; /* Dark background color */
-    color: white;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-/* Restricting size */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header Styling */
-header {
-    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-    width: 100%;
-}
-
-/* Navigation Styling */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s ease;
-}
-
-nav ul li a:hover {
-    background: #007acc;
-    border-radius: 5px;
-}
-
-/* Main Content Styling */
-main.home-background {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('assets/images/professional-picture.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: calc(100vh - 150px); /* Adjusted height to ensure footer is visible */
-}
-
-section#welcome {
-    max-width: 1200px;
-    text-align: center;
-}
-
-section#welcome img.main-image {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     box-sizing: border-box;
