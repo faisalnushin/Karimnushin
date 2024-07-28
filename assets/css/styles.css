@@ -20,8 +20,7 @@ body {
 
 /* Header Styling */
 header {
-    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
-    background-size: cover;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     color: white;
     padding: 2rem 1rem;
     text-align: center;
@@ -54,45 +53,34 @@ nav ul li a:hover {
 }
 
 /* Main Content Styling */
-main {
+main.home-background {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    background: url('assets/images/professional-picture.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
 }
 
-section#resources {
+section#welcome {
+    max-width: 1200px;
+    text-align: center;
+}
+
+section#welcome img.main-image {
+    width: 100%;
+    height: auto;
     max-width: 800px;
-    text-align: left;
-}
-
-section#resources h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-section#resources p {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-section#resources ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-}
-
-section#resources li {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
     padding: 1rem;
-    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
-    background-size: cover;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     color: white;
     position: relative;
     box-sizing: border-box;
