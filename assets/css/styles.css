@@ -11,12 +11,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: url('assets/images/professional-picture.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #2b2b2b; /* Dark background color */
 }
 
 header {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
     padding: 2rem;
     text-align: center;
@@ -54,13 +54,15 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: none; /* Ensures no additional background */
+    padding: 2rem;
+    background-color: #444; /* Match this with your website color scheme */
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
     width: 100%;
     position: relative;
