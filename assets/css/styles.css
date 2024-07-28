@@ -90,25 +90,33 @@ section h2 {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     padding: 2rem;
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 .bio-text p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
+    text-align: center; /* Center align text */
 }
 
-.photo-container {
+.bio-text .quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #007acc;
+}
+
+.photo-container, .project-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Make photo container responsive */
+    flex-wrap: wrap; /* Make container responsive */
 }
 
-.photo {
+.photo, .project {
     margin: 1rem;
     text-align: center;
 }
 
-.photo img {
+.photo img, .project img {
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -116,16 +124,12 @@ section h2 {
     height: auto; /* Maintain aspect ratio */
 }
 
-.project-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .project {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     padding: 2rem;
     margin-bottom: 1rem;
     border-radius: 10px;
+    flex: 1;
 }
 
 /* Footer Styling */
@@ -139,26 +143,3 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    box-sizing: border-box;
-    height: 50px; /* Ensure footer height is consistent */
-    flex-shrink: 0;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    header, nav, main, footer {
-        padding: 1rem;
-    }
-
-    section h2 {
-        font-size: 1.5rem;
-    }
-
-    .bio-container, .project, .photo-container {
-        padding: 1rem;
-    }
-
-    .photo img {
-        max-width: 100%;
-    }
-}
