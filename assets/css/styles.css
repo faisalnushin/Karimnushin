@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #333;
+    color: #fff;
 }
 
 .container {
@@ -13,19 +13,28 @@ body {
     padding: 0 15px;
 }
 
-.header, .main, .footer {
+.header, .footer {
     padding: 20px 0;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    background-color: #444;
+    text-align: center;
+    background-image: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
-.header h1 {
+.header h1, .footer p {
     margin: 0;
+}
+
+.header p {
+    margin: 5px 0 20px;
+    font-size: 1.2em;
 }
 
 .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -46,57 +55,37 @@ body {
 
 .menu li a {
     text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
+    color: #fff;
+    padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .menu li a:hover {
-    background-color: #ddd;
-}
-
-.intro, .highlights {
-    padding: 40px 0;
-}
-
-.intro h2 {
-    margin-top: 0;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.col {
-    flex: 1;
-    padding: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.button:hover {
     background-color: #555;
 }
 
-.footer {
+.main .background-image {
+    background-image: url('https://github.com/faisalnushin/faisalnushin.github.io/blob/main/assets/images/professional-picture.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.intro {
     text-align: center;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer {
     padding: 20px 0;
-    background-color: #333;
-    color: #fff;
+    background-color: #222;
+    text-align: center;
 }
 
 /* Responsive styles */
@@ -117,13 +106,5 @@ body {
         border: none;
         padding: 10px;
         cursor: pointer;
-    }
-
-    .row {
-        flex-direction: column;
-    }
-
-    .col {
-        margin-bottom: 20px;
     }
 }
