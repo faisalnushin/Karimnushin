@@ -91,7 +91,12 @@ main.home-background img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-main.about-content {
+main.about-content,
+main.resume-content,
+main.projects-content,
+main.publications-content,
+main.resources-content,
+main.gallery-content {
     background-color: #2b2b2b;
     padding: 2rem;
 }
@@ -107,14 +112,24 @@ section h2 {
     text-align: center;
 }
 
-.bio-container {
+.bio-container,
+.resume-container,
+.projects-container,
+.publications-container,
+.resources-container,
+.gallery-container {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     padding: 2rem;
     border-radius: 10px;
     margin-bottom: 2rem;
 }
 
-.bio-text p {
+.bio-text p,
+.resume-text p,
+.project p,
+.publication p,
+.resource p,
+.gallery-item p {
     margin-bottom: 1.5rem;
     line-height: 1.8;
     text-align: center;
@@ -126,18 +141,27 @@ section h2 {
     color: #007acc;
 }
 
-.photo-container, .project-container {
+.photo-container,
+.projects-container,
+.publications-container,
+.resources-container,
+.gallery-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; /* Make container responsive */
 }
 
-.photo, .project {
+.photo,
+.project,
+.publication,
+.resource,
+.gallery-item {
     margin: 1rem;
     text-align: center;
 }
 
-.photo img {
+.photo img,
+.gallery-item img {
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -145,7 +169,9 @@ section h2 {
     height: auto; /* Maintain aspect ratio */
 }
 
-.project {
+.project,
+.publication,
+.resource {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     padding: 2rem;
     margin-bottom: 1rem;
@@ -174,11 +200,17 @@ footer {
         font-size: 1.5rem;
     }
 
-    .bio-container, .project, .photo-container {
+    .bio-container,
+    .resume-container,
+    .projects-container,
+    .publications-container,
+    .resources-container,
+    .gallery-container {
         padding: 1rem;
     }
 
-    .photo img {
+    .photo img,
+    .gallery-item img {
         max-width: 100%;
     }
 }
