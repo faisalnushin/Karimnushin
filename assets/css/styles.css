@@ -47,15 +47,9 @@ nav ul li a:hover {
 
 main.home-background {
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: url('assets/images/professional-picture.jpg') no-repeat center center;
     background-size: cover;
-    width: 100%;
-    height: calc(100vh - 140px); /* Adjust based on header and footer height */
     margin: 0;
-    padding: 0;
 }
 
 footer {
