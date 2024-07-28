@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #2b2b2b; /* Dark background color to match the new image */
+    background-color: #2b2b2b; /* Dark background color */
 }
 
 header {
@@ -45,59 +45,14 @@ nav ul li a:hover {
     background: #007acc;
 }
 
-main {
+main.home-background {
     flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    background: url('assets/images/professional-picture.jpg') no-repeat center center;
+    background-size: cover;
     width: 100%;
-    box-sizing: border-box;
-    background-color: #2b2b2b; /* Dark background color to match the new image */
-}
-
-section {
-    padding: 2rem;
-    max-width: 800px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.8); /* Add semi-transparent background to sections */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-#biography, #featured-projects, #photography-highlights, #contact {
-    margin: 2rem 0;
-}
-
-.bio-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-.bio-text {
-    flex: 1;
-    text-align: justify;
-}
-
-#biography h2, #featured-projects h2, #photography-highlights h2, #contact h2 {
-    color: #007acc;
-    text-align: center;
-}
-
-.photo img {
-    max-width: 400px;
-    max-height: 533px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.photo {
-    text-align: center;
-    margin-bottom: 1.5rem;
 }
 
 footer {
