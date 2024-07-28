@@ -1,28 +1,33 @@
-html, body {
-    height: 100%;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    width: 100%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2b2b2b; /* Dark background color */
+    color: white;
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Fancy font can be changed here */
-    color: white; /* Updated to white */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #2b2b2b; /* Dark background color */
 }
 
+/* Header Styling */
 header {
     background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
     background-size: cover;
     color: white;
-    padding: 2rem;
+    padding: 2rem 1rem;
     text-align: center;
-    width: 100%;
 }
 
+/* Navigation Styling */
 nav ul {
     list-style: none;
     padding: 0;
@@ -30,7 +35,6 @@ nav ul {
     display: flex;
     justify-content: center;
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    width: 100%;
 }
 
 nav ul li {
@@ -41,11 +45,56 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    display: block;
+    transition: background 0.3s ease;
 }
 
 nav ul li a:hover {
     background: #007acc;
+    border-radius: 5px;
 }
 
-main
+/* Main Content Styling */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+section#resources {
+    max-width: 800px;
+    text-align: left;
+}
+
+section#resources h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section#resources p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+section#resources ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+section#resources li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
