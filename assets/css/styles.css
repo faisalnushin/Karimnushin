@@ -20,10 +20,12 @@ body {
 
 /* Header Styling */
 header {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
     padding: 2rem 1rem;
     text-align: center;
+    width: 100%;
 }
 
 /* Navigation Styling */
@@ -80,9 +82,12 @@ section#welcome img.main-image {
 footer {
     text-align: center;
     padding: 1rem;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
-    position: relative;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     box-sizing: border-box;
     flex-shrink: 0;
 }
