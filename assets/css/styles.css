@@ -1,110 +1,184 @@
-/* Global styles */
-body {
+/* Reset CSS */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #333;
-    color: #fff;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2b2b2b; /* Dark background color */
+    color: white;
+    line-height: 1.6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 2rem;
 }
 
-.header, .footer {
-    padding: 20px 0;
-    background-color: #444;
-    text-align: center;
-    background-image: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg');
+/* Header Styling */
+header {
+    background: url('assets/images/gray-ornament-wallpaper-black.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
-    color: #fff;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
 }
 
-.header h1, .footer p {
-    margin: 0;
+header h1 {
+    margin-bottom: 0.5rem;
 }
 
-.header p {
-    margin: 5px 0 20px;
-    font-size: 1.2em;
+header p {
+    font-size: 1.2rem;
 }
 
-.nav {
+/* Navigation Styling */
+nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
 }
 
-.menu-toggle {
-    display: none;
+nav ul li {
+    margin: 0.5rem;
 }
 
-.menu {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.menu li {
-    margin: 0;
-}
-
-.menu li a {
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #007acc;
     border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
-.menu li a:hover {
-    background-color: #555;
+/* Main Content Styling */
+main {
+    flex: 1;
 }
 
-.main .background-image {
-    background-image: url('https://github.com/faisalnushin/faisalnushin.github.io/blob/main/assets/images/professional-picture.jpg');
+main.home-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('assets/images/professional-picture.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
-    padding: 100px 0;
+    height: calc(100vh - 140px); /* Adjust for header and footer */
 }
 
-.intro {
-    text-align: center;
-}
-
-.intro img {
+main.home-background img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.footer {
-    padding: 20px 0;
-    background-color: #222;
+main.about-content {
+    background-color: #2b2b2b;
+    padding: 2rem;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
-/* Responsive styles */
+.bio-container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.bio-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.bio-text .quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #007acc;
+}
+
+.photo-container, .project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Make container responsive */
+}
+
+.photo, .project {
+    margin: 1rem;
+    text-align: center;
+}
+
+.photo img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.project {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    flex: 1;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: url('assets/images/gray-ornament-wallpaper-black.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        display: none;
+    header, nav, main, footer {
+        padding: 1rem;
     }
 
-    .menu.active {
-        display: flex;
+    section h2 {
+        font-size: 1.5rem;
     }
 
-    .menu-toggle {
-        display: block;
-        background: #333;
-        color: #fff;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
+    .bio-container, .project, .photo-container {
+        padding: 1rem;
+    }
+
+    .photo img {
+        max-width: 100%;
     }
 }
