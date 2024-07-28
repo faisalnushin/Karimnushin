@@ -29,7 +29,7 @@ body {
 
 /* Header Styling */
 header {
-    background: url('assets/images/gray-ornament-wallpaper-black.jpg') no-repeat center center;
+    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
@@ -183,7 +183,7 @@ section h2 {
 footer {
     text-align: center;
     padding: 1rem;
-    background: url('assets/images/gray-ornament-wallpaper-black.jpg') no-repeat center center;
+    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     width: 100%;
