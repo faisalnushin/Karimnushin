@@ -53,7 +53,7 @@ main.home-background {
     background: url('assets/images/professional-picture.jpg') no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 140px); /* Adjust based on header and footer height */
+    height: 100%; /* Make sure the main section takes up the full height */
 }
 
 footer {
