@@ -45,10 +45,11 @@ nav ul {
     display: flex;
     justify-content: center;
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    flex-wrap: wrap; /* Make navigation responsive */
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0.5rem;
 }
 
 nav ul li a {
@@ -99,7 +100,7 @@ section h2 {
 .photo-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Make photo container responsive */
 }
 
 .photo {
@@ -111,6 +112,8 @@ section h2 {
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .project-container {
@@ -139,4 +142,23 @@ footer {
     box-sizing: border-box;
     height: 50px; /* Ensure footer height is consistent */
     flex-shrink: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header, nav, main, footer {
+        padding: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .bio-container, .project, .photo-container {
+        padding: 1rem;
+    }
+
+    .photo img {
+        max-width: 100%;
+    }
 }
