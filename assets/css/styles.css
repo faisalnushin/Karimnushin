@@ -1,8 +1,8 @@
 html, body {
     height: 100%;
     margin: 0;
-    padding: 0;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -20,17 +20,14 @@ header {
     color: white;
     padding: 2rem;
     text-align: center;
-    width: 100%;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 nav ul li {
@@ -48,15 +45,15 @@ nav ul li a:hover {
     background: #007acc;
 }
 
-main {
+main.home-background {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     background: url('assets/images/professional-picture.jpg') no-repeat center center;
     background-size: cover;
-    margin: 0;
+    width: 100%;
+    height: calc(100vh - 140px); /* Adjust based on header and footer height */
 }
 
 footer {
