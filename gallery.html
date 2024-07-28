@@ -3,30 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Faisal Nushin</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Gallery - My Professional Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Faisal Nushin </h1>
-        <p>Welcome to my personal webpage!</p>
+    <header class="header">
+        <div class="container">
+            <h1>Gallery</h1>
+            <nav class="nav">
+                <button class="menu-toggle">Menu</button>
+                <ul class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Gallery</h2>
-        <p>Showcase your photography work here.</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Faisal Nushin. All rights reserved.</p>
+    <main class="main">
+        <div class="container">
+            <section class="gallery">
+                <h2>My Gallery</h2>
+                <div class="row">
+                    <div class="col col-4">
+                        <img src="assets/image1.jpg" alt="Gallery Image 1">
+                    </div>
+                    <div class="col col-4">
+                        <img src="assets/image2.jpg" alt="Gallery Image 2">
+                    </div>
+                    <div class="col col-4">
+                        <img src="assets/image3.jpg" alt="Gallery Image 3">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Professional Website. All rights reserved.</p>
+        </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
