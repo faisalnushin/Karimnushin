@@ -6,8 +6,8 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: 'Arial', sans-serif; /* Fancy font can be changed here */
+    color: white; /* Updated to white */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -48,24 +48,4 @@ nav ul li a:hover {
     background: #007acc;
 }
 
-main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 2rem;
-    background-color: #444; /* Match this with your website color scheme */
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: url('https://coolwallpapers.me/picsup/6057815-gray-ornament-wallpaper-black.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    width: 100%;
-    position: relative;
-    box-sizing: border-box;
-    flex-shrink: 0;
-}
+main
