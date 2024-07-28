@@ -1,10 +1,6 @@
 html, body {
     height: 100%;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    background: url('assets/images/professional-picture.jpg') no-repeat center center;
-    background-size: cover;
 }
 
 body {
@@ -12,7 +8,8 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    background: url('assets/images/professional-picture.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
@@ -47,12 +44,13 @@ nav ul li a:hover {
     background: #007acc;
 }
 
-main {
+main.home-background {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    background: none; /* Ensures no additional background */
 }
 
 footer {
